@@ -45,7 +45,7 @@ Three ideas run through this level:
   approve the package's install script (it compiles or downloads a native binary);
   approve it for `better-sqlite3` only.
 - A basic grasp of HTTP (methods, status codes, cookies, headers) helps a lot. The
-  [REST API Mastery Path](https://sigilipelli.github.io/rest-api-mastery-path/) covers
+  [REST API Mastery Path](https://learnmasterypath.com/rest-api-mastery-path/) covers
   it if you need a refresher.
 
 !!! note "Version-sensitive topics in this level"

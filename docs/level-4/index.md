@@ -47,7 +47,7 @@ Three ideas run through this level:
   lesson explains what to do and what to expect, and nothing requires paid services.
   Where we could not run something while writing (for example, a Docker build on the
   machine used), the lesson says so rather than showing invented output.
-- Related courses: [Docker Mastery Path](https://sigilipelli.github.io/docker-mastery-path/)
-  for containers, [Kubernetes Mastery Path](https://sigilipelli.github.io/kubernetes-mastery-path/)
-  for orchestration, and [Server Ops Mastery Path](https://sigilipelli.github.io/server-ops-mastery-path/)
+- Related courses: [Docker Mastery Path](https://learnmasterypath.com/docker-mastery-path/)
+  for containers, [Kubernetes Mastery Path](https://learnmasterypath.com/kubernetes-mastery-path/)
+  for orchestration, and [Server Ops Mastery Path](https://learnmasterypath.com/server-ops-mastery-path/)
   for running Linux servers and reverse proxies.

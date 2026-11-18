@@ -10,7 +10,7 @@ on the server, which JavaScript was sent to the browser, and which pages were tu
 into plain HTML at build time.
 
 You already know React (if not, begin with
-[React Mastery Path](https://sigilipelli.github.io/react-mastery-path/)). This level is
+[React Mastery Path](https://learnmasterypath.com/react-mastery-path/)). This level is
 about the layer on top: the conventions Next.js adds and the build and server machinery
 that make those conventions work.
 
@@ -45,7 +45,7 @@ Three ideas run through the whole level:
 - **Node.js 20.9 or newer.** That is the minimum for Next.js 16. Check with `node -v`.
 - **React fundamentals**: components, props, `useState`, `useEffect`, lists and keys.
 - **Basic TypeScript** helps; every example uses `.tsx`, but the types are light. See
-  [TypeScript Mastery Path](https://sigilipelli.github.io/typescript-mastery-path/) if
+  [TypeScript Mastery Path](https://learnmasterypath.com/typescript-mastery-path/) if
   you need a refresher.
 - A terminal and an editor. No accounts, cloud services or paid tools are needed for
   Levels 1–3.
