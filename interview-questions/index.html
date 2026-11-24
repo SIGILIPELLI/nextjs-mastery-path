@@ -1,0 +1,4278 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="179 Next.js interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Next.js Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/nextjs-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../cheat-sheet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Next.js Interview Questions and Answers (179 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Next.js Interview Questions and Answers (179 Questions)">
+  <meta property="og:description" content="179 Next.js interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Next.js Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/nextjs-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Next.js Interview Questions and Answers (179 Questions)">
+  <meta name="twitter:description" content="179 Next.js interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Next.js Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Next.js Mastery Path", "item": "https://learnmasterypath.com/nextjs-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/nextjs-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "nextjs-mastery-path", "name": "Next.js Mastery Path", "repo": "https://github.com/sigilipelli/nextjs-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/nextjs-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nextjs-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Next.js Mastery Path" class="md-header__button md-logo" aria-label="Next.js Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Next.js Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Next.js Interview Questions and Answers (179 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/nextjs-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nextjs-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cheat-sheet/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Master
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Next.js Mastery Path" class="md-nav__button md-logo" aria-label="Next.js Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Next.js Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/nextjs-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nextjs-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-nextjs-adds-to-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Next.js Adds to React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-create-next-app-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · create-next-app &amp; Project Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-file-based-routing-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · File-Based Routing &amp; Layouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-pages-navigation-with-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Pages &amp; Navigation with Link
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-server-vs-client-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Server vs Client Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-styling-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Styling Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-images-fonts-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Images, Fonts &amp; Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-static-assets-the-public-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Static Assets &amp; the public Folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-fetching-data-in-server-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Fetching Data in Server Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-markdown-blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Markdown Blog
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-dynamic-routes-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Dynamic Routes &amp; Params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-loading-error-not-found-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Loading, Error &amp; Not-Found UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-server-actions-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Server Actions &amp; Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-caching-revalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Caching &amp; Revalidation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-route-handlers-api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Route Handlers (API Endpoints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-proxy-formerly-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Proxy (formerly Middleware)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-authentication-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Authentication Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-databases-with-an-orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Databases with an ORM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-url-state-search-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · URL State &amp; Search Params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-full-stack-task-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Full-Stack Task Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-rendering-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Rendering Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-suspense-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Suspense &amp; Streaming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-parallel-intercepting-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Parallel &amp; Intercepting Routes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-internationalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Internationalization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-seo-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · SEO in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-performance-core-web-vitals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Performance &amp; Core Web Vitals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-testing-with-vitest-playwright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Testing with Vitest &amp; Playwright
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-client-side-data-interactivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Client-Side Data &amp; Interactivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-streaming-analytics-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Streaming Analytics Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-deployment-managed-self-hosted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Deployment: Managed &amp; Self-Hosted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-nodejs-vs-edge-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Node.js vs Edge Runtime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-monorepos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Monorepos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Observability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-large-app-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Large-App Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-upgrading-codemods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Upgrading &amp; Codemods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Accessibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-static-export-cdn-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Static Export &amp; CDN Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-production-readiness-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Production Readiness Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-production-nextjs-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Production Next.js App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-system-routing-and-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File-system routing and params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-based-and-tag-based-revalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-based and tag-based revalidation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-nextjs-adds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Next.js Adds to React
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-create-next-app-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · create-next-app & Project Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-file-routing-layouts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · File-Based Routing & Layouts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-pages-navigation-link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Pages & Navigation with Link
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-server-vs-client-components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Server vs Client Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-styling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Styling Options
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-images-fonts-metadata/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Images, Fonts & Metadata
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-static-assets-public/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Static Assets & the public Folder
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-data-fetching-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Fetching Data in Server Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Markdown Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-dynamic-routes-params/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Dynamic Routes & Params
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-loading-error-not-found/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Loading, Error & Not-Found UI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-server-actions-forms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Server Actions & Forms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-caching-revalidation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Caching & Revalidation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-route-handlers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Route Handlers (API Endpoints)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-proxy-middleware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Proxy (formerly Middleware)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Authentication Patterns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-databases-orm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Databases with an ORM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-url-state-search-params/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · URL State & Search Params
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-crud-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Full-Stack Task Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Advanced
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-rendering-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Rendering Strategies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-suspense-streaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Suspense & Streaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-parallel-intercepting-routes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Parallel & Intercepting Routes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-internationalization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Internationalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-seo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · SEO in Depth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-performance-web-vitals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Performance & Core Web Vitals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Testing with Vitest & Playwright
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-client-data-interactivity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Client-Side Data & Interactivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Streaming Analytics Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Master
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Master
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Deployment: Managed & Self-Hosted
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-edge-vs-node-runtime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Node.js vs Edge Runtime
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-monorepos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Monorepos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Observability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-large-app-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Large-App Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-upgrading-codemods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Upgrading & Codemods
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-accessibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Accessibility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-static-export-cdn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Static Export & CDN Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-production-readiness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Production Readiness Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Production Next.js App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-nextjs-adds-to-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Next.js Adds to React
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-create-next-app-project-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · create-next-app &amp; Project Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-file-based-routing-layouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · File-Based Routing &amp; Layouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-pages-navigation-with-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Pages &amp; Navigation with Link
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-server-vs-client-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Server vs Client Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-styling-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Styling Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-images-fonts-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Images, Fonts &amp; Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-static-assets-the-public-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Static Assets &amp; the public Folder
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-fetching-data-in-server-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Fetching Data in Server Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-markdown-blog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Markdown Blog
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-dynamic-routes-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Dynamic Routes &amp; Params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-loading-error-not-found-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Loading, Error &amp; Not-Found UI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-server-actions-forms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Server Actions &amp; Forms
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-caching-revalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Caching &amp; Revalidation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-route-handlers-api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Route Handlers (API Endpoints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-proxy-formerly-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Proxy (formerly Middleware)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-authentication-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Authentication Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-databases-with-an-orm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Databases with an ORM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-url-state-search-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · URL State &amp; Search Params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-full-stack-task-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Full-Stack Task Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-rendering-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Rendering Strategies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-suspense-streaming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Suspense &amp; Streaming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-parallel-intercepting-routes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Parallel &amp; Intercepting Routes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-internationalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Internationalization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-seo-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · SEO in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-performance-core-web-vitals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Performance &amp; Core Web Vitals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-testing-with-vitest-playwright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Testing with Vitest &amp; Playwright
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Security
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-client-side-data-interactivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Client-Side Data &amp; Interactivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-streaming-analytics-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Streaming Analytics Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-deployment-managed-self-hosted" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Deployment: Managed &amp; Self-Hosted
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-nodejs-vs-edge-runtime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Node.js vs Edge Runtime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-monorepos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Monorepos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Observability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-large-app-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Large-App Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-upgrading-codemods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Upgrading &amp; Codemods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-accessibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Accessibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-static-export-cdn-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Static Export &amp; CDN Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-production-readiness-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Production Readiness Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-production-nextjs-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Production Next.js App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#file-system-routing-and-params" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        File-system routing and params
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-based-and-tag-based-revalidation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time-based and tag-based revalidation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="nextjs-interview-questions-and-answers">Next.js Interview Questions and Answers<a class="headerlink" href="#nextjs-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>179 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free Next.js Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-entry">Level 1 · Entry<a class="headerlink" href="#level-1-entry" title="Permanent link">&para;</a></h2>
+<h3 id="01-what-nextjs-adds-to-react"><a href="../level-1/01-what-nextjs-adds/">01 · What Next.js Adds to React</a><a class="headerlink" href="#01-what-nextjs-adds-to-react" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What does Next.js add to React?</p>
+<p><strong>Answer:</strong> Routing, server rendering, data fetching, bundling and deployment conventions</p>
+<p>A full-stack React framework.</p>
+<p><strong>Q2.</strong> What is the App Router?</p>
+<p><strong>Answer:</strong> A file-system router in the app/ directory built on React Server Components</p>
+<p>Layouts, streaming, server actions.</p>
+<p><strong>Q3.</strong> Why server-render pages?</p>
+<p><strong>Answer:</strong> Faster first paint, better SEO and less client JavaScript</p>
+<p>HTML arrives ready.</p>
+<p><strong>Q4.</strong> What does <code>next dev</code> do?</p>
+<p><strong>Answer:</strong> Starts the development server with hot reloading</p>
+<p><code>next build</code> is for production.</p>
+<h3 id="02-create-next-app-project-structure"><a href="../level-1/02-create-next-app-structure/">02 · create-next-app &amp; Project Structure</a><a class="headerlink" href="#02-create-next-app-project-structure" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> What does <code>create-next-app</code> generate?</p>
+<p><strong>Answer:</strong> A project with app/, public/, config and scripts</p>
+<p>Starter.</p>
+<p><strong>Q6.</strong> Where do static files like favicons live?</p>
+<p><strong>Answer:</strong> The public/ directory</p>
+<p>Served from the root.</p>
+<p><strong>Q7.</strong> What is next.config.js for?</p>
+<p><strong>Answer:</strong> Configuring the build/runtime (images, redirects, headers)</p>
+<p>Project config.</p>
+<p><strong>Q8.</strong> What do the TypeScript defaults give you?</p>
+<p><strong>Answer:</strong> Type checking for components, routes and config</p>
+<p>Safer.</p>
+<h3 id="03-file-based-routing-layouts"><a href="../level-1/03-file-routing-layouts/">03 · File-Based Routing &amp; Layouts</a><a class="headerlink" href="#03-file-based-routing-layouts" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> How is a route created in the App Router?</p>
+<p><strong>Answer:</strong> A folder with a page.tsx file</p>
+<p>File-system routing.</p>
+<p><strong>Q10.</strong> What does layout.tsx do?</p>
+<p><strong>Answer:</strong> Wraps child routes with shared UI that persists across navigation</p>
+<p>Nested layouts.</p>
+<p><strong>Q11.</strong> What's a route segment?</p>
+<p><strong>Answer:</strong> A folder name in the path (e.g. app/blog/page.tsx is /blog)</p>
+<p>Nesting.</p>
+<p><strong>Q12.</strong> What does a route group (marketing) do?</p>
+<p><strong>Answer:</strong> Organizes routes without affecting the URL</p>
+<p>Parentheses.</p>
+<h3 id="04-pages-navigation-with-link"><a href="../level-1/04-pages-navigation-link/">04 · Pages &amp; Navigation with Link</a><a class="headerlink" href="#04-pages-navigation-with-link" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> Which component does client-side navigation between pages?</p>
+<p><strong>Answer:</strong> next/link's Link</p>
+<p>Prefetching included.</p>
+<p><strong>Q14.</strong> What does Link prefetch?</p>
+<p><strong>Answer:</strong> Routes in the viewport so navigation feels instant</p>
+<p>Production only.</p>
+<p><strong>Q15.</strong> How navigate programmatically in a client component?</p>
+<p><strong>Answer:</strong> useRouter().push('/path')</p>
+<p>From next/navigation.</p>
+<p><strong>Q16.</strong> What does usePathname return?</p>
+<p><strong>Answer:</strong> The current URL path</p>
+<p>Client hook.</p>
+<h3 id="05-server-vs-client-components"><a href="../level-1/05-server-vs-client-components/">05 · Server vs Client Components</a><a class="headerlink" href="#05-server-vs-client-components" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> What are Server Components by default in the App Router?</p>
+<p><strong>Answer:</strong> Components that render on the server with no client JS</p>
+<p>Zero bundle cost.</p>
+<p><strong>Q18.</strong> When do you add 'use client'?</p>
+<p><strong>Answer:</strong> When you need state, effects, event handlers or browser APIs</p>
+<p>Client boundary.</p>
+<p><strong>Q19.</strong> Can a Server Component import a Client Component?</p>
+<p><strong>Answer:</strong> Yes; the client component hydrates in the browser</p>
+<p>Composition.</p>
+<p><strong>Q20.</strong> Can a Client Component import a Server Component directly?</p>
+<p><strong>Answer:</strong> No, but it can receive one as children/props</p>
+<p>Pass as props.</p>
+<h3 id="06-styling-options"><a href="../level-1/06-styling/">06 · Styling Options</a><a class="headerlink" href="#06-styling-options" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> Which styling approaches does Next.js support?</p>
+<p><strong>Answer:</strong> CSS Modules, global CSS, Tailwind and CSS-in-JS (with client caveats)</p>
+<p>Flexible.</p>
+<p><strong>Q22.</strong> What's a CSS Module?</p>
+<p><strong>Answer:</strong> Locally scoped class names per component file</p>
+<p>styles.module.css.</p>
+<p><strong>Q23.</strong> Where is global CSS imported?</p>
+<p><strong>Answer:</strong> In the root layout</p>
+<p>Once.</p>
+<p><strong>Q24.</strong> Why do CSS-in-JS libraries need care?</p>
+<p><strong>Answer:</strong> They often require client components and runtime support</p>
+<p>Server components.</p>
+<h3 id="07-images-fonts-metadata"><a href="../level-1/07-images-fonts-metadata/">07 · Images, Fonts &amp; Metadata</a><a class="headerlink" href="#07-images-fonts-metadata" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> Why use next/image?</p>
+<p><strong>Answer:</strong> Automatic resizing, lazy loading and modern formats to improve performance</p>
+<p>Core Web Vitals.</p>
+<p><strong>Q26.</strong> Why give images width and height?</p>
+<p><strong>Answer:</strong> Reserve space and avoid layout shift (CLS)</p>
+<p>Or fill.</p>
+<p><strong>Q27.</strong> What does next/font do?</p>
+<p><strong>Answer:</strong> Self-hosts fonts and eliminates layout shift</p>
+<p>No external requests.</p>
+<p><strong>Q28.</strong> How set page metadata?</p>
+<p><strong>Answer:</strong> Export a metadata object or generateMetadata</p>
+<p>SEO.</p>
+<h3 id="08-static-assets-the-public-folder"><a href="../level-1/08-static-assets-public/">08 · Static Assets &amp; the <code>public</code> Folder</a><a class="headerlink" href="#08-static-assets-the-public-folder" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> Files in public/ are available at?</p>
+<p><strong>Answer:</strong> The site root (public/logo.png is /logo.png)</p>
+<p>Direct URL.</p>
+<p><strong>Q30.</strong> When use public/ over importing?</p>
+<p><strong>Answer:</strong> For files referenced by fixed URL like robots.txt and favicons</p>
+<p>No hashing.</p>
+<p><strong>Q31.</strong> Do imported assets get hashed names?</p>
+<p><strong>Answer:</strong> Yes, enabling long-term caching</p>
+<p>Bundler.</p>
+<p><strong>Q32.</strong> What's a downside of public/?</p>
+<p><strong>Answer:</strong> No automatic optimization or cache busting</p>
+<p>Use imports.</p>
+<h3 id="09-fetching-data-in-server-components"><a href="../level-1/09-data-fetching-basics/">09 · Fetching Data in Server Components</a><a class="headerlink" href="#09-fetching-data-in-server-components" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> How fetch data in a Server Component?</p>
+<p><strong>Answer:</strong> Make the component async and await fetch or a database call</p>
+<p>Direct on the server.</p>
+<p><strong>Q34.</strong> What are the benefits?</p>
+<p><strong>Answer:</strong> No client waterfalls and secrets stay on the server</p>
+<p>Security.</p>
+<p><strong>Q35.</strong> What does fetch cache control accept?</p>
+<p><strong>Answer:</strong> cache and next.revalidate options</p>
+<p>Defaults changed across versions.</p>
+<p><strong>Q36.</strong> How run requests in parallel?</p>
+<p><strong>Answer:</strong> Start them together and await Promise.all</p>
+<p>Avoid waterfalls.</p>
+<h3 id="10-project-a-markdown-blog"><a href="../level-1/10-project-blog/">10 · Project — A Markdown Blog</a><a class="headerlink" href="#10-project-a-markdown-blog" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What does the blog project combine?</p>
+<p><strong>Answer:</strong> Routing, layouts, metadata, static content and data fetching</p>
+<p>Level 1 project.</p>
+<p><strong>Q38.</strong> How render posts from files or a CMS?</p>
+<p><strong>Answer:</strong> Server components reading content and generateStaticParams for pages</p>
+<p>Static generation.</p>
+<p><strong>Q39.</strong> How improve SEO for posts?</p>
+<p><strong>Answer:</strong> Per-post metadata and semantic HTML</p>
+<p>generateMetadata.</p>
+<p><strong>Q40.</strong> How test navigation?</p>
+<p><strong>Answer:</strong> Link-based e2e/integration tests</p>
+<p>Playwright.</p>
+<h2 id="level-2-intermediate">Level 2 · Intermediate<a class="headerlink" href="#level-2-intermediate" title="Permanent link">&para;</a></h2>
+<h3 id="01-dynamic-routes-params"><a href="../level-2/01-dynamic-routes-params/">01 · Dynamic Routes &amp; Params</a><a class="headerlink" href="#01-dynamic-routes-params" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> How define a dynamic route?</p>
+<p><strong>Answer:</strong> A folder like app/blog/[slug]/page.tsx</p>
+<p>params.slug.</p>
+<p><strong>Q42.</strong> What are params in a page component?</p>
+<p><strong>Answer:</strong> An object (promise in recent versions) with the dynamic segments</p>
+<p>Await in newer Next.</p>
+<p><strong>Q43.</strong> What does [...slug] match?</p>
+<p><strong>Answer:</strong> Catch-all segments (one or more)</p>
+<p>[[...slug]] is optional.</p>
+<p><strong>Q44.</strong> What does generateStaticParams do?</p>
+<p><strong>Answer:</strong> Tells Next which dynamic paths to prerender at build time</p>
+<p>Static generation.</p>
+<h3 id="02-loading-error-not-found-ui"><a href="../level-2/02-loading-error-not-found/">02 · Loading, Error &amp; Not-Found UI</a><a class="headerlink" href="#02-loading-error-not-found-ui" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> What does loading.tsx provide?</p>
+<p><strong>Answer:</strong> An instant loading UI shown while a segment streams</p>
+<p>Suspense boundary.</p>
+<p><strong>Q46.</strong> What does error.tsx do?</p>
+<p><strong>Answer:</strong> Catches errors in a segment and shows a fallback (client component)</p>
+<p>Error boundary.</p>
+<p><strong>Q47.</strong> What does notFound() do?</p>
+<p><strong>Answer:</strong> Renders the nearest not-found.tsx with a 404 status</p>
+<p>Missing resources.</p>
+<p><strong>Q48.</strong> Why colocate these files?</p>
+<p><strong>Answer:</strong> Each segment controls its own loading and error UX</p>
+<p>Granular.</p>
+<h3 id="03-server-actions-forms"><a href="../level-2/03-server-actions-forms/">03 · Server Actions &amp; Forms</a><a class="headerlink" href="#03-server-actions-forms" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> What is a Server Action?</p>
+<p><strong>Answer:</strong> An async function that runs on the server, invoked from forms or client code</p>
+<p>'use server'.</p>
+<p><strong>Q50.</strong> How call it from a form?</p>
+<p><strong>Answer:</strong> Pass it to the form's action prop</p>
+<p>Progressive enhancement.</p>
+<p><strong>Q51.</strong> Why validate input in Server Actions?</p>
+<p><strong>Answer:</strong> They're public endpoints; never trust client data</p>
+<p>Zod.</p>
+<p><strong>Q52.</strong> How update the UI after a mutation?</p>
+<p><strong>Answer:</strong> revalidatePath/revalidateTag or redirect</p>
+<p>Cache invalidation.</p>
+<h3 id="04-caching-revalidation"><a href="../level-2/04-caching-revalidation/">04 · Caching &amp; Revalidation</a><a class="headerlink" href="#04-caching-revalidation" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> What does revalidate: 60 mean?</p>
+<p><strong>Answer:</strong> Cached data may be regenerated at most every 60 seconds (ISR)</p>
+<p>Time-based.</p>
+<p><strong>Q54.</strong> What does revalidateTag do?</p>
+<p><strong>Answer:</strong> Invalidates cached data tagged with that label on demand</p>
+<p>On-demand ISR.</p>
+<p><strong>Q55.</strong> What's the Full Route Cache?</p>
+<p><strong>Answer:</strong> Prerendered HTML/RSC payloads cached on the server</p>
+<p>Static routes.</p>
+<p><strong>Q56.</strong> When is a route dynamic?</p>
+<p><strong>Answer:</strong> When it uses cookies, headers or uncached data per request</p>
+<p>Dynamic APIs.</p>
+<h3 id="05-route-handlers-api-endpoints"><a href="../level-2/05-route-handlers/">05 · Route Handlers (API Endpoints)</a><a class="headerlink" href="#05-route-handlers-api-endpoints" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> What is a route handler?</p>
+<p><strong>Answer:</strong> A route.ts exporting HTTP method functions (GET, POST)</p>
+<p>API endpoints.</p>
+<p><strong>Q58.</strong> What do route handlers receive?</p>
+<p><strong>Answer:</strong> A Request and return a Response (NextResponse)</p>
+<p>Web standard.</p>
+<p><strong>Q59.</strong> When use route handlers vs server actions?</p>
+<p><strong>Answer:</strong> Handlers for external clients/webhooks; actions for app form/mutations</p>
+<p>Different consumers.</p>
+<p><strong>Q60.</strong> How read JSON body?</p>
+<p><strong>Answer:</strong> await request.json()</p>
+<p>Web API.</p>
+<h3 id="06-proxy-formerly-middleware"><a href="../level-2/06-proxy-middleware/">06 · Proxy (formerly Middleware)</a><a class="headerlink" href="#06-proxy-formerly-middleware" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What is middleware (proxy) used for?</p>
+<p><strong>Answer:</strong> Running code before a request completes: redirects, auth checks, headers</p>
+<p>Edge-friendly.</p>
+<p><strong>Q62.</strong> Where is it defined?</p>
+<p><strong>Answer:</strong> A middleware/proxy file at the project root (src/)</p>
+<p>matcher config.</p>
+<p><strong>Q63.</strong> What should it avoid?</p>
+<p><strong>Answer:</strong> Heavy work and database calls (runs on every matched request)</p>
+<p>Keep it light.</p>
+<p><strong>Q64.</strong> What's a matcher?</p>
+<p><strong>Answer:</strong> A config limiting which paths run the middleware</p>
+<p>Performance.</p>
+<h3 id="07-authentication-patterns"><a href="../level-2/07-authentication/">07 · Authentication Patterns</a><a class="headerlink" href="#07-authentication-patterns" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> Where verify sessions securely?</p>
+<p><strong>Answer:</strong> On the server near the data access, not only in middleware</p>
+<p>Defense in depth.</p>
+<p><strong>Q66.</strong> How store session tokens?</p>
+<p><strong>Answer:</strong> HttpOnly, Secure, SameSite cookies</p>
+<p>XSS safety.</p>
+<p><strong>Q67.</strong> What does Auth.js (NextAuth) provide?</p>
+<p><strong>Answer:</strong> Authentication flows and providers</p>
+<p>Integrations.</p>
+<p><strong>Q68.</strong> What must every protected action check?</p>
+<p><strong>Answer:</strong> Authorization for that specific resource</p>
+<p>IDOR.</p>
+<h3 id="08-databases-with-an-orm"><a href="../level-2/08-databases-orm/">08 · Databases with an ORM</a><a class="headerlink" href="#08-databases-with-an-orm" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> Where run database queries?</p>
+<p><strong>Answer:</strong> In server components, server actions or route handlers (server only)</p>
+<p>Secrets safe.</p>
+<p><strong>Q70.</strong> Why reuse the DB client in dev?</p>
+<p><strong>Answer:</strong> Hot reload creates many connections otherwise</p>
+<p>Singleton pattern.</p>
+<p><strong>Q71.</strong> What do ORMs like Prisma/Drizzle give?</p>
+<p><strong>Answer:</strong> Typed queries and migrations</p>
+<p>Safer data access.</p>
+<p><strong>Q72.</strong> How avoid SQL injection?</p>
+<p><strong>Answer:</strong> Use parameterized queries via the ORM</p>
+<p>Never string-build.</p>
+<h3 id="09-url-state-search-params"><a href="../level-2/09-url-state-search-params/">09 · URL State &amp; Search Params</a><a class="headerlink" href="#09-url-state-search-params" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> Why keep UI state in the URL?</p>
+<p><strong>Answer:</strong> Shareable, bookmarkable and works with back/forward</p>
+<p>Search params.</p>
+<p><strong>Q74.</strong> How read search params in a server page?</p>
+<p><strong>Answer:</strong> Via the searchParams prop</p>
+<p>Dynamic.</p>
+<p><strong>Q75.</strong> How update them on the client?</p>
+<p><strong>Answer:</strong> useRouter/Link with new query strings or useSearchParams</p>
+<p>Navigation.</p>
+<p><strong>Q76.</strong> What to debounce?</p>
+<p><strong>Answer:</strong> Search-as-you-type updates to avoid too many requests</p>
+<p>UX.</p>
+<h3 id="10-project-full-stack-task-manager"><a href="../level-2/10-project-crud-app/">10 · Project — Full-Stack Task Manager</a><a class="headerlink" href="#10-project-full-stack-task-manager" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> What does the CRUD app project combine?</p>
+<p><strong>Answer:</strong> Dynamic routes, server actions, validation, DB and revalidation</p>
+<p>Level 2 project.</p>
+<p><strong>Q78.</strong> How handle validation errors?</p>
+<p><strong>Answer:</strong> Return errors from the action and render them in the form</p>
+<p>useActionState.</p>
+<p><strong>Q79.</strong> How ensure lists update after creating?</p>
+<p><strong>Answer:</strong> revalidatePath for the list route</p>
+<p>Cache.</p>
+<p><strong>Q80.</strong> How protect mutations?</p>
+<p><strong>Answer:</strong> Authenticate and authorize inside each action</p>
+<p>Server-side.</p>
+<h2 id="level-3-advanced">Level 3 · Advanced<a class="headerlink" href="#level-3-advanced" title="Permanent link">&para;</a></h2>
+<h3 id="01-rendering-strategies"><a href="../level-3/01-rendering-strategies/">01 · Rendering Strategies</a><a class="headerlink" href="#01-rendering-strategies" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> Which strategy prerenders at build time?</p>
+<p><strong>Answer:</strong> Static rendering (SSG)</p>
+<p>Fast and cacheable.</p>
+<p><strong>Q82.</strong> When use dynamic rendering?</p>
+<p><strong>Answer:</strong> When content depends on the request (user, cookies, fresh data)</p>
+<p>Per request.</p>
+<p><strong>Q83.</strong> What is ISR?</p>
+<p><strong>Answer:</strong> Static pages regenerated in the background after a time or event</p>
+<p>Best of both.</p>
+<p><strong>Q84.</strong> What's partial prerendering?</p>
+<p><strong>Answer:</strong> A static shell with dynamic holes streamed in</p>
+<p>Hybrid.</p>
+<h3 id="02-suspense-streaming"><a href="../level-3/02-suspense-streaming/">02 · Suspense &amp; Streaming</a><a class="headerlink" href="#02-suspense-streaming" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What does Suspense enable?</p>
+<p><strong>Answer:</strong> Showing fallbacks while parts of the UI stream in</p>
+<p>Progressive rendering.</p>
+<p><strong>Q86.</strong> What does streaming improve?</p>
+<p><strong>Answer:</strong> Time to first byte/paint for slow data sections</p>
+<p>Don't block the page.</p>
+<p><strong>Q87.</strong> Where place Suspense boundaries?</p>
+<p><strong>Answer:</strong> Around slow, independent sections</p>
+<p>Granular.</p>
+<p><strong>Q88.</strong> What does loading.tsx wrap?</p>
+<p><strong>Answer:</strong> The segment in a Suspense boundary automatically</p>
+<p>Convention.</p>
+<h3 id="03-parallel-intercepting-routes"><a href="../level-3/03-parallel-intercepting-routes/">03 · Parallel &amp; Intercepting Routes</a><a class="headerlink" href="#03-parallel-intercepting-routes" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> What are parallel routes?</p>
+<p><strong>Answer:</strong> Multiple pages rendered simultaneously in slots (@folder)</p>
+<p>Dashboards.</p>
+<p><strong>Q90.</strong> What are intercepting routes?</p>
+<p><strong>Answer:</strong> Showing another route's content in the current context (e.g. a modal)</p>
+<p>(.)photo.</p>
+<p><strong>Q91.</strong> Typical use of interception?</p>
+<p><strong>Answer:</strong> Modal previews with shareable URLs</p>
+<p>UX.</p>
+<p><strong>Q92.</strong> What does default.tsx do for slots?</p>
+<p><strong>Answer:</strong> Provides a fallback when a slot has no match</p>
+<p>Hard navigation.</p>
+<h3 id="04-internationalization"><a href="../level-3/04-internationalization/">04 · Internationalization</a><a class="headerlink" href="#04-internationalization" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> How localize routes?</p>
+<p><strong>Answer:</strong> Locale segments (app/[lang]) with a dictionary and middleware detection</p>
+<p>i18n routing.</p>
+<p><strong>Q94.</strong> What helps SEO for locales?</p>
+<p><strong>Answer:</strong> hreflang alternates and localized metadata</p>
+<p>Search engines.</p>
+<p><strong>Q95.</strong> Where load translations?</p>
+<p><strong>Answer:</strong> On the server so they ship no extra client JS</p>
+<p>Server components.</p>
+<p><strong>Q96.</strong> How format dates and numbers?</p>
+<p><strong>Answer:</strong> Intl APIs with the locale</p>
+<p>Correctness.</p>
+<h3 id="05-seo-in-depth"><a href="../level-3/05-seo/">05 · SEO in Depth</a><a class="headerlink" href="#05-seo-in-depth" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> How add sitemap and robots?</p>
+<p><strong>Answer:</strong> sitemap.ts and robots.ts route files</p>
+<p>Generated.</p>
+<p><strong>Q98.</strong> What does canonical URL prevent?</p>
+<p><strong>Answer:</strong> Duplicate-content confusion</p>
+<p>alternates.canonical.</p>
+<p><strong>Q99.</strong> What helps rich results?</p>
+<p><strong>Answer:</strong> Structured data (JSON-LD)</p>
+<p>Schema.org.</p>
+<p><strong>Q100.</strong> What affects SEO most technically?</p>
+<p><strong>Answer:</strong> Crawlable HTML, speed and correct metadata</p>
+<p>Fundamentals.</p>
+<h3 id="06-performance-core-web-vitals"><a href="../level-3/06-performance-web-vitals/">06 · Performance &amp; Core Web Vitals</a><a class="headerlink" href="#06-performance-core-web-vitals" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> Which are Core Web Vitals?</p>
+<p><strong>Answer:</strong> LCP, INP and CLS</p>
+<p>User-centric.</p>
+<p><strong>Q102.</strong> What improves LCP?</p>
+<p><strong>Answer:</strong> Optimizing the hero image/font and server response</p>
+<p>priority on images.</p>
+<p><strong>Q103.</strong> What causes CLS?</p>
+<p><strong>Answer:</strong> Content shifting due to missing dimensions or late-loading fonts/ads</p>
+<p>Reserve space.</p>
+<p><strong>Q104.</strong> How reduce JavaScript?</p>
+<p><strong>Answer:</strong> Prefer server components, dynamic imports and smaller dependencies</p>
+<p>Bundle analyzer.</p>
+<h3 id="07-testing-with-vitest-playwright"><a href="../level-3/07-testing/">07 · Testing with Vitest &amp; Playwright</a><a class="headerlink" href="#07-testing-with-vitest-playwright" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What test types fit Next.js?</p>
+<p><strong>Answer:</strong> Unit/component (Jest/Vitest), e2e (Playwright) and integration</p>
+<p>Pyramid.</p>
+<p><strong>Q106.</strong> How test async server components?</p>
+<p><strong>Answer:</strong> E2E or integration tests (unit tools struggle)</p>
+<p>Current limitation.</p>
+<p><strong>Q107.</strong> What do you mock in unit tests?</p>
+<p><strong>Answer:</strong> next/navigation hooks and network calls</p>
+<p>Isolation.</p>
+<p><strong>Q108.</strong> What does Playwright give?</p>
+<p><strong>Answer:</strong> Real browser tests across the full stack</p>
+<p>Reliable flows.</p>
+<h3 id="08-security"><a href="../level-3/08-security/">08 · Security</a><a class="headerlink" href="#08-security" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> Which header reduces XSS risk?</p>
+<p><strong>Answer:</strong> Content-Security-Policy</p>
+<p>Configure.</p>
+<p><strong>Q110.</strong> Why validate Server Action input?</p>
+<p><strong>Answer:</strong> Actions are callable by anyone; treat as public APIs</p>
+<p>Zod.</p>
+<p><strong>Q111.</strong> How keep secrets out of the browser?</p>
+<p><strong>Answer:</strong> Don't prefix with NEXT_PUBLIC_; use server-only code</p>
+<p>Env vars.</p>
+<p><strong>Q112.</strong> What's CSRF protection in Server Actions?</p>
+<p><strong>Answer:</strong> Origin checks built in plus SameSite cookies</p>
+<p>Defense.</p>
+<h3 id="09-client-side-data-interactivity"><a href="../level-3/09-client-data-interactivity/">09 · Client-Side Data &amp; Interactivity</a><a class="headerlink" href="#09-client-side-data-interactivity" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> When use SWR/React Query?</p>
+<p><strong>Answer:</strong> Client-side data that needs caching, polling or optimistic updates</p>
+<p>Interactivity.</p>
+<p><strong>Q114.</strong> What's optimistic UI?</p>
+<p><strong>Answer:</strong> Updating the UI immediately before the server confirms</p>
+<p>useOptimistic.</p>
+<p><strong>Q115.</strong> How mix server and client data?</p>
+<p><strong>Answer:</strong> Fetch initial data on the server and hydrate client state</p>
+<p>Initial data.</p>
+<p><strong>Q116.</strong> What should live in client state?</p>
+<p><strong>Answer:</strong> Interactive UI state, not server data you can fetch on the server</p>
+<p>Minimize.</p>
+<h3 id="10-project-streaming-analytics-dashboard"><a href="../level-3/10-project-dashboard/">10 · Project — Streaming Analytics Dashboard</a><a class="headerlink" href="#10-project-streaming-analytics-dashboard" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> What does the dashboard project combine?</p>
+<p><strong>Answer:</strong> Streaming, parallel routes, charts, auth and caching</p>
+<p>Level 3 project.</p>
+<p><strong>Q118.</strong> How keep slow widgets from blocking?</p>
+<p><strong>Answer:</strong> Suspense per widget</p>
+<p>Streaming.</p>
+<p><strong>Q119.</strong> How ensure accurate numbers?</p>
+<p><strong>Answer:</strong> Server-side queries with caching rules and tests</p>
+<p>Correctness.</p>
+<p><strong>Q120.</strong> How measure performance?</p>
+<p><strong>Answer:</strong> Lighthouse/Web Vitals and real-user monitoring</p>
+<p>Evidence.</p>
+<h2 id="level-4-master">Level 4 · Master<a class="headerlink" href="#level-4-master" title="Permanent link">&para;</a></h2>
+<h3 id="01-deployment-managed-self-hosted"><a href="../level-4/01-deployment/">01 · Deployment: Managed &amp; Self-Hosted</a><a class="headerlink" href="#01-deployment-managed-self-hosted" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What's the simplest Next.js hosting?</p>
+<p><strong>Answer:</strong> Vercel (zero-config), or Node/Docker/self-host and static export</p>
+<p>Many options.</p>
+<p><strong>Q122.</strong> What does <code>next build</code> output?</p>
+<p><strong>Answer:</strong> An optimized production build (.next) with static and server parts</p>
+<p>Then <code>next start</code>.</p>
+<p><strong>Q123.</strong> How containerize?</p>
+<p><strong>Answer:</strong> Use the standalone output in a minimal Node image</p>
+<p>output: 'standalone'.</p>
+<p><strong>Q124.</strong> What config differs per environment?</p>
+<p><strong>Answer:</strong> Environment variables (runtime and build-time)</p>
+<p>12-factor.</p>
+<h3 id="02-nodejs-vs-edge-runtime"><a href="../level-4/02-edge-vs-node-runtime/">02 · Node.js vs Edge Runtime</a><a class="headerlink" href="#02-nodejs-vs-edge-runtime" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> Edge runtime vs Node runtime?</p>
+<p><strong>Answer:</strong> Edge is lightweight and globally distributed with limited APIs; Node has full APIs</p>
+<p>Choose per route.</p>
+<p><strong>Q126.</strong> What can't Edge usually do?</p>
+<p><strong>Answer:</strong> Use Node-only APIs and most native drivers</p>
+<p>Limitations.</p>
+<p><strong>Q127.</strong> When pick Edge?</p>
+<p><strong>Answer:</strong> Low-latency personalization, redirects and lightweight logic</p>
+<p>Speed.</p>
+<p><strong>Q128.</strong> How set runtime?</p>
+<p><strong>Answer:</strong> export const runtime = 'edge' | 'nodejs'</p>
+<p>Route-level.</p>
+<h3 id="03-monorepos"><a href="../level-4/03-monorepos/">03 · Monorepos</a><a class="headerlink" href="#03-monorepos" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> Why use a monorepo?</p>
+<p><strong>Answer:</strong> Share packages (UI, config, types) across apps with unified tooling</p>
+<p>Turborepo/Nx.</p>
+<p><strong>Q130.</strong> What does Turborepo cache?</p>
+<p><strong>Answer:</strong> Task outputs keyed by inputs to skip rebuilds</p>
+<p>Remote cache.</p>
+<p><strong>Q131.</strong> How share UI components?</p>
+<p><strong>Answer:</strong> Internal packages with transpilePackages</p>
+<p>Config.</p>
+<p><strong>Q132.</strong> What risk to manage?</p>
+<p><strong>Answer:</strong> Dependency version drift and build times</p>
+<p>Workspaces.</p>
+<h3 id="04-observability"><a href="../level-4/04-observability/">04 · Observability</a><a class="headerlink" href="#04-observability" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> What does OpenTelemetry in Next.js provide?</p>
+<p><strong>Answer:</strong> Traces for requests, rendering and fetches</p>
+<p>instrumentation.ts.</p>
+<p><strong>Q134.</strong> Which signals matter?</p>
+<p><strong>Answer:</strong> Logs, metrics and traces plus Web Vitals from real users</p>
+<p>Observability.</p>
+<p><strong>Q135.</strong> How track client errors?</p>
+<p><strong>Answer:</strong> An error monitoring service (Sentry) with source maps</p>
+<p>Production.</p>
+<p><strong>Q136.</strong> Why add request IDs?</p>
+<p><strong>Answer:</strong> Correlate logs across services</p>
+<p>Debugging.</p>
+<h3 id="05-large-app-architecture"><a href="../level-4/05-large-app-architecture/">05 · Large-App Architecture</a><a class="headerlink" href="#05-large-app-architecture" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> How organize a large app?</p>
+<p><strong>Answer:</strong> Feature folders, shared UI packages and clear server/client boundaries</p>
+<p>Maintainability.</p>
+<p><strong>Q138.</strong> What does the server-only package do?</p>
+<p><strong>Answer:</strong> Prevents server modules from being imported by client code</p>
+<p>Safety.</p>
+<p><strong>Q139.</strong> Where keep business logic?</p>
+<p><strong>Answer:</strong> In framework-agnostic modules called by actions/handlers</p>
+<p>Testable.</p>
+<p><strong>Q140.</strong> What prevents tangled code?</p>
+<p><strong>Answer:</strong> Dependency rules and linting boundaries</p>
+<p>Architecture.</p>
+<h3 id="06-upgrading-codemods"><a href="../level-4/06-upgrading-codemods/">06 · Upgrading &amp; Codemods</a><a class="headerlink" href="#06-upgrading-codemods" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> How upgrade Next.js safely?</p>
+<p><strong>Answer:</strong> Read the upgrade guide, use codemods, upgrade on a branch and run tests</p>
+<p>@next/codemod.</p>
+<p><strong>Q142.</strong> What do codemods do?</p>
+<p><strong>Answer:</strong> Automate code changes for breaking API updates</p>
+<p>Time saver.</p>
+<p><strong>Q143.</strong> What helps pin behavior?</p>
+<p><strong>Answer:</strong> Lockfiles and CI builds</p>
+<p>Reproducible.</p>
+<p><strong>Q144.</strong> What should you read first?</p>
+<p><strong>Answer:</strong> Release notes and the migration guide</p>
+<p>Breaking changes.</p>
+<h3 id="07-accessibility"><a href="../level-4/07-accessibility/">07 · Accessibility</a><a class="headerlink" href="#07-accessibility" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> What's key for accessible Next.js apps?</p>
+<p><strong>Answer:</strong> Semantic HTML, focus management and ARIA only when needed</p>
+<p>WCAG.</p>
+<p><strong>Q146.</strong> How handle route change announcements?</p>
+<p><strong>Answer:</strong> Next's route announcer and focus management</p>
+<p>Screen readers.</p>
+<p><strong>Q147.</strong> Which lint helps a11y?</p>
+<p><strong>Answer:</strong> eslint-plugin-jsx-a11y</p>
+<p>Static checks.</p>
+<p><strong>Q148.</strong> How test accessibility?</p>
+<p><strong>Answer:</strong> axe checks in tests plus manual keyboard/screen reader testing</p>
+<p>Automated is partial.</p>
+<h3 id="08-static-export-cdn-caching"><a href="../level-4/08-static-export-cdn/">08 · Static Export &amp; CDN Caching</a><a class="headerlink" href="#08-static-export-cdn-caching" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> What's static export?</p>
+<p><strong>Answer:</strong> output: 'export' producing plain HTML/CSS/JS for any static host/CDN</p>
+<p>No server features.</p>
+<p><strong>Q150.</strong> What features don't work with static export?</p>
+<p><strong>Answer:</strong> Server actions, route handlers and dynamic rendering</p>
+<p>Limitations.</p>
+<p><strong>Q151.</strong> When choose it?</p>
+<p><strong>Answer:</strong> Content sites without server needs and cheap global hosting</p>
+<p>Simple.</p>
+<p><strong>Q152.</strong> How handle images?</p>
+<p><strong>Answer:</strong> Use unoptimized or a custom loader (no image server)</p>
+<p>Config.</p>
+<h3 id="09-production-readiness-review"><a href="../level-4/09-production-readiness/">09 · Production Readiness Review</a><a class="headerlink" href="#09-production-readiness-review" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> What does production readiness include?</p>
+<p><strong>Answer:</strong> Security headers, monitoring, caching strategy, error pages and tests</p>
+<p>Checklist.</p>
+<p><strong>Q154.</strong> What should fail the pipeline?</p>
+<p><strong>Answer:</strong> Type errors, lint errors, failing tests and build errors</p>
+<p>CI gates.</p>
+<p><strong>Q155.</strong> How roll back?</p>
+<p><strong>Answer:</strong> Redeploy the previous immutable build</p>
+<p>Fast recovery.</p>
+<p><strong>Q156.</strong> What caches need attention?</p>
+<p><strong>Answer:</strong> CDN, data cache and browser caching headers</p>
+<p>Invalidation.</p>
+<h3 id="10-capstone-a-production-nextjs-app"><a href="../level-4/10-capstone/">10 · Capstone — A Production Next.js App</a><a class="headerlink" href="#10-capstone-a-production-nextjs-app" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What does the capstone combine?</p>
+<p><strong>Answer:</strong> Routing, rendering strategy, auth, data, performance and deployment</p>
+<p>Production app.</p>
+<p><strong>Q158.</strong> How prove quality?</p>
+<p><strong>Answer:</strong> Lighthouse, tests, accessibility and security review</p>
+<p>Evidence.</p>
+<p><strong>Q159.</strong> What documentation helps?</p>
+<p><strong>Answer:</strong> README, architecture decisions and runbooks</p>
+<p>Onboarding.</p>
+<p><strong>Q160.</strong> What sustains it?</p>
+<p><strong>Answer:</strong> CI, upgrades and monitoring</p>
+<p>Maintenance.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> What's the main benefit of Server Components by default?</p>
+<p><strong>Answer:</strong> Less client JavaScript and direct, secure access to server data</p>
+<p>Components render on the server.</p>
+<p><strong>Q162.</strong> You need useState and a click handler. What do you add?</p>
+<p><strong>Answer:</strong> 'use client' at the top of the component file</p>
+<p>Marks the client boundary.</p>
+<p><strong>Q163.</strong> Which file creates the /blog/[slug] page?</p>
+<p><strong>Answer:</strong> app/blog/[slug]/page.tsx</p>
+<p>Folder names are segments.</p>
+<p><strong>Q164.</strong> What does a route group like (marketing) do to the URL?</p>
+<p><strong>Answer:</strong> Nothing: it only organizes files</p>
+<p>Parentheses are omitted.</p>
+<p><strong>Q165.</strong> Where should a slow, independent widget be wrapped so the page can stream?</p>
+<p><strong>Answer:</strong> In a Suspense boundary with a fallback</p>
+<p>Progressive rendering.</p>
+<p><strong>Q166.</strong> Which file shows an instant loading state while a segment fetches?</p>
+<p><strong>Answer:</strong> loading.tsx</p>
+<p>Automatic Suspense.</p>
+<p><strong>Q167.</strong> A server action receives form data. What must you do first?</p>
+<p><strong>Answer:</strong> Validate and authorize it: actions are public endpoints</p>
+<p>Treat input as untrusted.</p>
+<p><strong>Q168.</strong> After a mutation, how do you refresh a cached list page?</p>
+<p><strong>Answer:</strong> revalidatePath or revalidateTag in the action</p>
+<p>Cache invalidation.</p>
+<p><strong>Q169.</strong> What does <code>revalidate: 60</code> mean for fetched data?</p>
+<p><strong>Answer:</strong> It may be regenerated at most once per 60 seconds (time-based ISR)</p>
+<p>Stale-while-revalidate.</p>
+<p><strong>Q170.</strong> When is a route handler (route.ts) the right tool?</p>
+<p><strong>Answer:</strong> For external clients, webhooks or non-React consumers</p>
+<p>Server actions are for your own UI.</p>
+<p><strong>Q171.</strong> Where should authorization be enforced?</p>
+<p><strong>Answer:</strong> Near data access on the server (not only in middleware)</p>
+<p>Defense in depth.</p>
+<p><strong>Q172.</strong> Why keep filters and pagination in search params?</p>
+<p><strong>Answer:</strong> They're shareable, bookmarkable and work with back/forward</p>
+<p>URL as state.</p>
+<p><strong>Q173.</strong> Which strategy gives a static shell with dynamic holes streamed in?</p>
+<p><strong>Answer:</strong> Partial prerendering</p>
+<p>Hybrid.</p>
+<p><strong>Q174.</strong> A product image causes layout shift. What fixes CLS?</p>
+<p><strong>Answer:</strong> next/image with width/height (or fill) to reserve space</p>
+<p>Core Web Vitals.</p>
+<p><strong>Q175.</strong> Which Core Web Vitals does Next.js help with?</p>
+<p><strong>Answer:</strong> LCP, INP and CLS</p>
+<p>Measure with Lighthouse and RUM.</p>
+<p><strong>Q176.</strong> A secret key must never reach the browser. How are env vars named?</p>
+<p><strong>Answer:</strong> Without the NEXT_PUBLIC_ prefix and used only in server code</p>
+<p>Prefixed vars are inlined.</p>
+<p><strong>Q177.</strong> A route needs Node-only database drivers. Which runtime?</p>
+<p><strong>Answer:</strong> Node.js runtime (Edge has limited APIs)</p>
+<p>export const runtime.</p>
+<p><strong>Q178.</strong> You host on a plain CDN with no server. What mode?</p>
+<p><strong>Answer:</strong> Static export (output: 'export'), accepting no server features</p>
+<p>No actions or handlers.</p>
+<p><strong>Q179.</strong> How do you upgrade major versions safely?</p>
+<p><strong>Answer:</strong> Read the guide, run codemods on a branch and rely on tests and CI</p>
+<p>@next/codemod.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="file-system-routing-and-params">File-system routing and params<a class="headerlink" href="#file-system-routing-and-params" title="Permanent link">&para;</a></h3>
+<p>Implement toRoute (strip app/, route groups and the leaf file) and match: static segments, [x], [...x] and [[...x]] with parameters, preferring routes with more static segments, and 404 for unknown URLs. It models how the App Router maps folders to URLs.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>// App Router style file-system routes. Files are paths like "app/blog/[slug]/page.tsx".
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>const files = [
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  "app/page.tsx",
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  "app/(marketing)/about/page.tsx",
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  "app/blog/page.tsx",
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  "app/blog/[slug]/page.tsx",
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  "app/shop/[...parts]/page.tsx",
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  "app/docs/[[...path]]/page.tsx",
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  "app/api/health/route.ts",
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>];
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>function toRoute(file) {
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  // strip the leading "app/", drop the leaf (page.* =&gt; kind "page", route.* =&gt; "handler") and route
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  // groups "(name)"; return { pattern: "/" + remaining segments joined, kind, segs }
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  return { pattern: "/", kind: "page", segs: [] };
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>}
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>const routes = files.map(toRoute);
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>function match(url) {
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>  // static segments match literally; [x] matches one segment; [...x] one or more; [[...x]] zero or more;
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>  // if several routes match prefer the one with more static segments. Return
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>  // "&lt;kind&gt; &lt;pattern&gt; &lt;params as JSON&gt;" or "404 not-found"
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>  return "404 not-found";
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>}
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>console.log(routes.map((r) =&gt; r.pattern).join("  "));
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>for (const u of ["/", "/about", "/blog", "/blog/hello-world", "/shop/a/b/c", "/docs", "/docs/x/y", "/api/health", "/nope"]) {
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>  console.log(u.padEnd(18), match(u));
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>}
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>/  /about  /blog  /blog/[slug]  /shop/[...parts]  /docs/[[...path]]  /api/health
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>/                  page / {}
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>/about             page /about {}
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>/blog              page /blog {}
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>/blog/hello-world  page /blog/[slug] {"slug":"hello-world"}
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>/shop/a/b/c        page /shop/[...parts] {"parts":["a","b","c"]}
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>/docs              page /docs/[[...path]] {"path":[]}
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>/docs/x/y          page /docs/[[...path]] {"path":["x","y"]}
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>/api/health        handler /api/health {}
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>/nope              404 not-found
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+// App Router style file-system routes. Files are paths like "app/blog/[slug]/page.tsx".
+const files = [
+  "app/page.tsx",
+  "app/(marketing)/about/page.tsx",
+  "app/blog/page.tsx",
+  "app/blog/[slug]/page.tsx",
+  "app/shop/[...parts]/page.tsx",
+  "app/docs/[[...path]]/page.tsx",
+  "app/api/health/route.ts",
+];
+
+function toRoute(file) {
+  const segs = file.replace(/^app\//, "").split("/");
+  const leaf = segs.pop();                                  // page.tsx or route.ts
+  const kept = segs.filter((s) =&gt; !(s.startsWith("(") &amp;&amp; s.endsWith(")")));   // route groups vanish
+  return { pattern: "/" + kept.join("/"), kind: leaf.startsWith("page") ? "page" : "handler", segs: kept };
+}
+
+const routes = files.map(toRoute);
+
+function match(url) {
+  const parts = url.split("/").filter(Boolean);
+  let best = null;
+  for (const r of routes) {
+    const params = {};
+    let i = 0, ok = true;
+    for (const [k, seg] of r.segs.entries()) {
+      const optional = /^\[\[\.\.\.(.+)\]\]$/.exec(seg);
+      const rest = /^\[\.\.\.(.+)\]$/.exec(seg);
+      const dyn = /^\[(.+)\]$/.exec(seg);
+      if (optional) { params[optional[1]] = parts.slice(i); i = parts.length; }
+      else if (rest) { if (i &gt;= parts.length) { ok = false; break; } params[rest[1]] = parts.slice(i); i = parts.length; }
+      else if (dyn) { if (i &gt;= parts.length) { ok = false; break; } params[dyn[1]] = parts[i++]; }
+      else { if (parts[i] !== seg) { ok = false; break; } i++; }
+    }
+    if (ok &amp;&amp; i === parts.length) {
+      const specificity = r.segs.filter((s) =&gt; !s.startsWith("[")).length;   // static segments win
+      if (!best || specificity &gt; best.specificity) best = { pattern: r.pattern, kind: r.kind, params, specificity };
+    }
+  }
+  return best ? `${best.kind} ${best.pattern} ${JSON.stringify(best.params)}` : "404 not-found";
+}
+
+console.log(routes.map((r) =&gt; r.pattern).join("  "));
+for (const u of ["/", "/about", "/blog", "/blog/hello-world", "/shop/a/b/c", "/docs", "/docs/x/y", "/api/health", "/nope"]) {
+  console.log(u.padEnd(18), match(u));
+}
+```
+
+Folders become URL segments, parenthesized groups disappear, brackets create params and the most specific route wins. This models the idea, not Next's actual router. Verified by running the solution with Node.
+</code></pre></div>
+<h3 id="time-based-and-tag-based-revalidation">Time-based and tag-based revalidation<a class="headerlink" href="#time-based-and-tag-based-revalidation" title="Permanent link">&para;</a></h3>
+<p>Implement DataCache.get so entries are served from cache while fresh, refetched after <code>revalidate</code> seconds or after revalidateTag invalidates them, and counted as origin fetches. A fake clock drives the scenario.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>// A tiny model of the Next.js data cache: time-based revalidation (ISR) plus on-demand tag invalidation.
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>class DataCache {
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  constructor(clock) { this.clock = clock; this.entries = new Map(); this.fetches = 0; }
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  async get(key, fetcher, { revalidate = Infinity, tags = [] } = {}) {
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    // return { value, source } where source is "cache" while the entry is fresh (age &lt; revalidate seconds and
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    // not invalidated), "origin" for the first fetch of a key and "revalidated" when an existing entry is
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    // refetched; store { value, at: now, tags, invalid: false } and count origin calls in this.fetches
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    return { value: undefined, source: "origin" };
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  }
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  revalidateTag(tag) {
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    for (const e of this.entries.values()) if (e.tags.includes(tag)) e.invalid = true;
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  }
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>}
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>(async () =&gt; {
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  const clock = { now: 0 };
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  const cache = new DataCache(clock);
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>  let version = 1;
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  const fetchPosts = async () =&gt; `posts v${version}`;
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  const show = async (label, key, opts) =&gt; {
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    const r = await cache.get(key, fetchPosts, opts);
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>    console.log(label.padEnd(30), r.source.padEnd(12), r.value);
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  };
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>  await show("first request", "posts", { revalidate: 60, tags: ["posts"] });
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>  version = 2;
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>  clock.now = 30_000;
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>  await show("30s later (still fresh)", "posts", { revalidate: 60, tags: ["posts"] });
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>  clock.now = 61_000;
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>  await show("61s later (expired)", "posts", { revalidate: 60, tags: ["posts"] });
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>  version = 3;
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>  await show("immediately again", "posts", { revalidate: 60, tags: ["posts"] });
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>  cache.revalidateTag("posts");
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>  await show("after revalidateTag('posts')", "posts", { revalidate: 60, tags: ["posts"] });
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>  await show("force-cache forever", "config", { revalidate: Infinity });
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>  clock.now = 10_000_000;
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>  await show("much later, still cached", "config", { revalidate: Infinity });
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>  console.log("origin fetches:", cache.fetches);
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>})();
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>first request                  origin       posts v1
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>30s later (still fresh)        cache        posts v1
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>61s later (expired)            revalidated  posts v2
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>immediately again              cache        posts v2
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>after revalidateTag('posts')   revalidated  posts v3
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>force-cache forever            origin       posts v3
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>much later, still cached       cache        posts v3
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>origin fetches: 4
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+// A tiny model of the Next.js data cache: time-based revalidation (ISR) plus on-demand tag invalidation.
+class DataCache {
+  constructor(clock) { this.clock = clock; this.entries = new Map(); this.fetches = 0; }
+
+  async get(key, fetcher, { revalidate = Infinity, tags = [] } = {}) {
+    const e = this.entries.get(key);
+    const now = this.clock.now;
+    if (e &amp;&amp; !e.invalid &amp;&amp; now - e.at &lt; revalidate * 1000) return { value: e.value, source: "cache" };
+    const stale = e ? e.value : undefined;
+    this.fetches++;
+    const value = await fetcher();
+    this.entries.set(key, { value, at: now, tags, invalid: false });
+    return { value, source: e ? "revalidated" : "origin", stale };
+  }
+
+  revalidateTag(tag) {
+    for (const e of this.entries.values()) if (e.tags.includes(tag)) e.invalid = true;
+  }
+}
+
+(async () =&gt; {
+  const clock = { now: 0 };
+  const cache = new DataCache(clock);
+  let version = 1;
+  const fetchPosts = async () =&gt; `posts v${version}`;
+  const show = async (label, key, opts) =&gt; {
+    const r = await cache.get(key, fetchPosts, opts);
+    console.log(label.padEnd(30), r.source.padEnd(12), r.value);
+  };
+
+  await show("first request", "posts", { revalidate: 60, tags: ["posts"] });
+  version = 2;
+  clock.now = 30_000;
+  await show("30s later (still fresh)", "posts", { revalidate: 60, tags: ["posts"] });
+  clock.now = 61_000;
+  await show("61s later (expired)", "posts", { revalidate: 60, tags: ["posts"] });
+  version = 3;
+  await show("immediately again", "posts", { revalidate: 60, tags: ["posts"] });
+  cache.revalidateTag("posts");
+  await show("after revalidateTag('posts')", "posts", { revalidate: 60, tags: ["posts"] });
+  await show("force-cache forever", "config", { revalidate: Infinity });
+  clock.now = 10_000_000;
+  await show("much later, still cached", "config", { revalidate: Infinity });
+  console.log("origin fetches:", cache.fetches);
+})();
+```
+
+Next's data cache serves fresh entries, revalidates after a time window (ISR) and can be invalidated on demand by tag, so unnecessary origin fetches are avoided. This is a simplified model. Verified by running the solution with Node.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">Next.js Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/react-mastery-path/">React</a></li><li><a href="https://learnmasterypath.com/angular-mastery-path/">Angular</a></li><li><a href="https://learnmasterypath.com/vue-mastery-path/">Vue.js</a></li><li><a href="https://learnmasterypath.com/html-css-mastery-path/">HTML & CSS</a></li><li><a href="https://learnmasterypath.com/tailwind-mastery-path/">Tailwind CSS</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cheat Sheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/nextjs-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/nextjs-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
