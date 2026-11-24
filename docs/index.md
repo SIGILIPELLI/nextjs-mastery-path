@@ -1,6 +1,6 @@
 ---
 title: "Free Next.js Course: App Router, Server Components, Server Actions & Deployment"
-description: "Free Next.js 16 course — 36 lessons and 4 projects on the App Router, Server Components, Server Actions, caching, streaming, testing, security and self-hosted deployment."
+description: "Free Next.js 16 course — 36 lessons, 3 projects and 1 capstone on the App Router, Server Components, Server Actions, caching, streaming, testing, security and self-hosted deployment."
 ---
 
 # Next.js Mastery Path
